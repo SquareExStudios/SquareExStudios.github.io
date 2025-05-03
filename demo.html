@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Typing Replacement Effect</title>
+<style>
+    .typing-container {
+      font-family: monospace; /* For a typewriter-like font */
+      font-size: 1.5em;
+      white-space: nowrap; /* Prevent text from wrapping */
+      overflow: hidden; /* Hide the overflowing deleted text */
+    }
+  
+    .original-text {
+      position: relative;
+    }
+  
+    .deleted-text {
+      position: absolute;
+      top: 0;
+      left: 0;
+      color: transparent; /* Make the original text invisible */
+      background-color: black; /* Color of the deletion effect */
+      animation: delete-text 1.5s steps(10) forwards,
+                 blink-cursor 0.75s step-end infinite;
+    }
+  
+    .replacement-text {
+      opacity: 0; /* Initially hidden */
+      animation: show-text 1s steps(10) forwards 1.5s; /* Start after deletion */
+    }
+  
+    .cursor {
+      display: inline-block;
+      width: 0.1em;
+      height: 1.1em;
+      background-color: black;
+      animation: blink-cursor 0.75s step-end infinite;
+    }
+  
+    @keyframes delete-text {
+      from { width: 100%; }
+      to { width: 0%; }
+    }
+  
+    @keyframes show-text {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+  
+    @keyframes blink-cursor {
+      from, to { background-color: transparent; }
+      50% { background-color: black; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="typing-container">
+  <span class="original-text">HelloWorld</span>
+  <span class="deleted-text">this is demo</span>
+  <span class="replacement-text">Goodbye</span>
+  <span class="cursor"></span>
+</div>
+
+</body>
+</html>
