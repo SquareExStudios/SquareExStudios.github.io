@@ -13796,6 +13796,51 @@ textarea.form-control {
   stroke-linecap: round;
 }
 
+.animate__slideInDown {
+  --animate-delay: 5s;
+}
+
+#privacyPolicyBox {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  z-index: 1050;
+  /* Ensure it's above other elements */
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  /* Ease-in-out animation for opacity */
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+#privacyPolicyBox.show {
+  display: block;
+  opacity: 1;
+}
+
+#overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  /* Semi-transparent background */
+  z-index: 1000;
+  /* Below the box but above other content */
+}
+
+#overlay.show {
+  display: block;
+}
+
 @-webkit-keyframes loader-rotate {
   100% {
     -webkit-transform: rotate(360deg);
