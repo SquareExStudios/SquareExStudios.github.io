@@ -420,4 +420,25 @@ window.addEventListener('scroll', setActiveLink);
 // Call setActiveLink on initial load to handle cases where the URL has a hash
 setActiveLink();
 
+$(document).ready(function () {
+	const privacyPolicyLink = $('#privacyPolicyLink');
+	const privacyPolicyBox = $('#privacyPolicyBox');
+	const closeButton = $('#closePrivacyPolicy');
+	const overlay = $('#overlay');
 
+	privacyPolicyLink.on('click', function (e) {
+		e.preventDefault();
+		privacyPolicyBox.addClass('show');
+		overlay.addClass('show');
+	});
+
+	closeButton.on('click', function () {
+		privacyPolicyBox.removeClass('show');
+		overlay.removeClass('show');
+	});
+
+	overlay.on('click', function () {
+		privacyPolicyBox.removeClass('show');
+		overlay.removeClass('show');
+	});
+});
