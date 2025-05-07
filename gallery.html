@@ -9,32 +9,33 @@
 
 	<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed:500,600,700&display=swap" rel="stylesheet">
-
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Special+Elite&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
-
+	<link rel="stylesheet" href="css/icon.css">
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
-
 	<link rel="stylesheet" href="css/aos.css">
-
 	<link rel="stylesheet" href="css/ionicons.min.css">
-
 	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
 	<link rel="stylesheet" href="css/jquery.timepicker.css">
-
-
-	<link rel="stylesheet" href="css/flaticon.css">
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/custom-dropdown.css">
+	<link rel="stylesheet" href="css/nav.css">
 </head>
 
 <body>
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light bg-blur" id="ftco-navbar">
 		<div class="container">
-			<a class="navbar-brand" href="index.html#index" style="margin-left: 50px;"><img id="navlogo" src="/logo/logof.png"
+			<a class="navbar-brand" href="#index" style="margin-left: 50px;"><img id="navlogo" src="/logo/logof.png"
 					alt="SquareEx">SquareEx
 				Studios</a>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
@@ -42,17 +43,44 @@
 				<span class="oi oi-menu"></span> Menu
 			</button>
 
+
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a href="index.html#index" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="index.html#gallery" class="nav-link">Gallery</a></li>
-					<li class="nav-item"><a href="index.html#services" class="nav-link">Services</a></li>
+					<li class="nav-item dropdown"><a href="about.html" class="nav-link"
+							style="white-space: nowrap">About Us</a>
+						<ul class="dropdown-content">
+							<li class="dropdown-item"><a href="globe.html" class="nav-link" style="color: black;">Global
+									Presence</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a href="index.html#gallery" class="nav-link">Gallery</a>
+						<ul class="dropdown-content">
+							<li class="dropdown-item"><a href="gallery.html" class="nav-link"
+									style="color: black;">International Gallery</a></li>
+							<li class="dropdown-item"><a href="gallery1.html" class="nav-link"
+									style="color: black;">National Gallery</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a href="#services" class="nav-link">Services</a>
+						<ul class="dropdown-content">
+							<li class="dropdown-item"><a href="#" class="nav-link" style="color: black;">Website
+									Designing</a></li>
+							<li class="dropdown-item"><a href="#" class="nav-link" style="color: black;">Graphic
+									Designing</a></li>
+							<li class="dropdown-item"><a href="#" class="nav-link"
+									style="color: black;">Consultation</a></li>
+							<li class="dropdown-item"><a href="#" class="nav-link" style="color: black;">Digital
+									Marketing</a></li>
+						</ul>
+					</li>
 					<li class="nav-item"><a href="index.html#port" class="nav-link">Portfolio</a></li>
-					<!-- 					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
 					<li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
-					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+
 				</ul>
 			</div>
+
+
 		</div>
 	</nav>
 	<!-- END nav -->
@@ -64,8 +92,8 @@
 			<div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
 				<div class="col-md-9 ftco-animate pb-5 text-center">
 					<h2 class="mb-0 bread">International Gallery</h2>
-					<p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home <i
-									class="ion-ios-arrow-round-forward"></i></a></span> <span>Gallery <i
+					<p class="breadcrumbs"><span class="mr-2"><a href="index.html#gallery">Gallery<i
+									class="ion-ios-arrow-round-forward"></i></a></span> <span>International Gallery<i
 								class="ion-ios-arrow-round-forward"></i></span></p>
 				</div>
 			</div>
@@ -77,7 +105,7 @@
 			<div class="row no-gutters justify-content-center mb-5 pb-2">
 				<div class="col-md-6 text-center heading-section ftco-animate"><br><br><br>
 					<span class="subheading">Gallery</span>
-					<h2 class="mb-4">Portfolio</h2>
+					<h2 class="mb-4">exhibitions</h2>
 					<p>Separated they live in. A small river named Duden flows by their place and supplies it with
 						the
 						necessary regelialia.</p>
@@ -315,7 +343,7 @@
 						<h2 class="ftco-heading-2">Have a Questions?</h2>
 						<div class="block-23 mb-3">
 							<ul>
-								<li><span class="icon icon-map-marker"></span><span class="text">A28 Sakthi Majestic,
+								<li><span class="icon icon-map-marker"></span><span class="text">Sakthi Majestic,
 										MCN Nagar, Pillayar Koil St., Thoraipakkam, Chennai 600097</span></li>
 								<li><a href="tel:+919058112210"><span class="icon icon-phone"></span><span
 											class="text">+91 9058112210</span></a></li>
@@ -348,25 +376,25 @@
 				stroke="#F96D00" />
 		</svg></div>
 
-
-	<script src="js/jquery.min.js"></script>
-	<script src="js/jquery-migrate-3.0.1.min.js"></script>
-	<script src="js/popper.min.js"></script>
-	<script src="js/bootstrap.min.js"></script>
-	<script src="js/jquery.easing.1.3.js"></script>
-	<script src="js/jquery.waypoints.min.js"></script>
-	<script src="js/jquery.stellar.min.js"></script>
-	<script src="js/owl.carousel.min.js"></script>
-	<script src="js/jquery.magnific-popup.min.js"></script>
-	<script src="js/aos.js"></script>
-	<script src="js/jquery.animateNumber.min.js"></script>
-	<script src="js/bootstrap-datepicker.js"></script>
-	<script src="js/jquery.timepicker.min.js"></script>
-	<script src="js/scrollax.min.js"></script>
-<!-- 	<script
-		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script> -->
-	<script src="js/google-map.js"></script>
-	<script src="js/main.js"></script>
+		<script src="js/jquery.min.js"></script>
+		<script src="js/jquery-migrate-3.0.1.min.js"></script>
+		<script src="js/popper.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="js/jquery.easing.1.3.js"></script>
+		<script src="js/jquery.waypoints.min.js"></script>
+		<script src="js/jquery.stellar.min.js"></script>
+		<script src="js/owl.carousel.min.js"></script>
+		<script src="js/jquery.magnific-popup.min.js"></script>
+		<script src="js/aos.js"></script>
+		<script src="js/jquery.animateNumber.min.js"></script>
+		<script src="js/bootstrap-datepicker.js"></script>
+		<script src="js/jquery.timepicker.min.js"></script>
+		<script src="js/scrollax.min.js"></script>
+		<script src="js/google-map.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/type.js"></script>
+		<script src="js/nav.js"></script>
+	
 
 </body>
 

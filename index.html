@@ -19,38 +19,28 @@
 	<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
 	<link rel="stylesheet" href="css/animate.css">
 	<link rel="stylesheet" href="css/icon.css">
-
 	<link rel="stylesheet" href="css/owl.carousel.min.css">
 	<link rel="stylesheet" href="css/owl.theme.default.min.css">
 	<link rel="stylesheet" href="css/magnific-popup.css">
-
 	<link rel="stylesheet" href="css/aos.css">
-
 	<link rel="stylesheet" href="css/ionicons.min.css">
-
 	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
 	<link rel="stylesheet" href="css/jquery.timepicker.css">
-
-
-	<!-- <link rel="stylesheet" href="css/flaticon.css"> -->
 	<link rel="stylesheet" href="css/icomoon.css">
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/main.css">
-
-
+	<link rel="stylesheet" href="css/custom-dropdown.css">
+	<link rel="stylesheet" href="css/nav.css">
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#ftco-navbar" data-offset="70">
 
 	<!-- loading -->
 
 	<div id="loadingScreen" style="align-items: center;">
-
-		<!--My content is the word "soundscape" but the o is replaced with a disc--> <br><br>
+		<br><br>
 		<img src="/logo/logof.png" alt="SquareEx" class="w-logo">
 		<br><br>
-		<!-- <h1 style="font-size: 70%;">SquareEx Studios</h1> -->
-
 	</div>
 
 
@@ -65,21 +55,43 @@
 				<span class="oi oi-menu"></span> Menu
 			</button>
 
+
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a href="#index" class="nav-link">Home</a></li>
-					<li class="nav-item"><a href="#gallery" class="nav-link">Gallery</a></li>
-					<li class="nav-item"><a href="#services" class="nav-link">Services</a></li>
+					<li class="nav-item dropdown"><a href="about.html" class="nav-link"
+							style="white-space: nowrap">About Us</a>
+						<ul class="dropdown-content">
+							<li class="dropdown-item"><a href="globe.html" class="nav-link" style="color: black;">Global
+									Presence</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a href="#gallery" class="nav-link">Gallery</a>
+						<ul class="dropdown-content">
+							<li class="dropdown-item"><a href="gallery.html" class="nav-link"
+									style="color: black;">International Gallery</a></li>
+							<li class="dropdown-item"><a href="gallery1.html" class="nav-link"
+									style="color: black;">National Gallery</a></li>
+						</ul>
+					</li>
+					<li class="nav-item dropdown"><a href="#services" class="nav-link">Services</a>
+						<ul class="dropdown-content">
+							<li class="dropdown-item"><a href="#" class="nav-link" style="color: black;">Website
+									Designing</a></li>
+							<li class="dropdown-item"><a href="#" class="nav-link" style="color: black;">Graphic
+									Designing</a></li>
+							<li class="dropdown-item"><a href="#" class="nav-link"
+									style="color: black;">Consultation</a></li>
+							<li class="dropdown-item"><a href="#" class="nav-link" style="color: black;">Digital
+									Marketing</a></li>
+						</ul>
+					</li>
 					<li class="nav-item"><a href="#port" class="nav-link">Portfolio</a></li>
-
-					<!-- 					<li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
 					<li class="nav-item"><a href="#contact" class="nav-link">Contact</a></li>
-					<li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-	<!-- END nav -->
 
 
 	<section class="hero-wrap js-fullheight" style="background-image: url(images/bg-2.jpeg);"
@@ -89,10 +101,10 @@
 			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
 				<div class="col-lg-12 ftco-animate d-flex align-items-center">
 					<div class="text text-center">
-						<span class="heading12">Welcome to SquareEx</span>
+						<span class="heading12">Welcome to SquareEx Studios</span>
 						<h1 class="mb-4 animate__slideInDown"> Professional Platform</h1>
-						<h2 class="h2-main">For your Needs</h2>
-						<p><a href="docs/Exhibitions.pdf" class="btn btn-primary btn-outline-primary px-4 py-2">Download
+						<h4 class="heading12">for all your needs</h4>
+						<p><a href="#" class="btn btn-primary btn-outline-primary px-4 py-2">Download
 								Portfolio</a></p>
 					</div>
 				</div>
@@ -155,51 +167,52 @@
 				<div class="col-md-10 heading-section text-center ftco-animate">
 					<span class="subheading">Services</span>
 					<h2 class="mb-4">Services Menu</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+					<p>Benefit from our extensive experience and client-focused services, designed to streamline your processes and drive growth.</p>
 				</div>
 			</div>
 			<div class="row no-gutters d-flex">
 				<div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
 					<div class="media block-6 services d-block text-center">
 						<div class="icon">
-							<img class="web_develop" src="icon/vector.png" alt="Designing">
+							<a href="#"> <img class="web_develop" src="icon/vector.png" alt="Designing"></a>
 						</div>
 						<div class="media-body">
 							<h3 class="heading mb-3">Designing</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
+							<p>Transforming ideas into impactful designs.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
 					<div class="media block-6 services d-block text-center">
 						<div class="icon">
-							<img class="web_develop" src="icon/code.png" alt="Web Development">
+							<a href="#"> <img class="web_develop" src="icon/code.png" alt="Web Development"></a>
 						</div>
 						<div class="media-body">
 							<h3 class="heading mb-3">Web Development</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
+							<p>Where aesthetics meet seamless functionality.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
 					<div class="media block-6 services d-block text-center">
 						<div class="icon">
-							<img class="web_develop" src="icon/consultant.png" alt="Consultation">
+							<a href="#"> <img class="web_develop" src="icon/consultant.png" alt="Consultation"></a>
 						</div>
 						<div class="media-body">
 							<h3 class="heading mb-3">Consultation</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
+							<p>Providing clarity and direction for your success.</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-md-6 col-lg-3 d-flex align-self-stretch ftco-animate">
 					<div class="media block-6 services d-block text-center">
 						<div class="icon">
-							<img class="web_develop" src="icon/social-media.png" alt="">
+							<a href="#"> <img class="web_develop" src="icon/social-media.png"
+									alt="Digital Marketing"></a>
 						</div>
 						<div class="media-body">
 							<h3 class="heading mb-3">Digital Marketing</h3>
-							<p>A small river named Duden flows by their place and supplies.</p>
+							<p>Amplifying your brand in the digital world.</p>
 						</div>
 					</div>
 				</div>
@@ -217,6 +230,7 @@
 		</h1>
 	</Section>
 
+	<!-- portfolio -->
 
 	<section class="ftco-section ftco-no-pt ftco-no-pb" id="port">
 		<div class="container">
@@ -224,9 +238,7 @@
 				<div class="col-md-6 text-center heading-section ftco-animate"><br><br><br>
 					<span class="subheading">Gallery</span>
 					<h2 class="mb-4">Portfolio</h2>
-					<p>Separated they live in. A small river named Duden flows by their place and supplies it with
-						the
-						necessary regelialia.</p>
+					<p>Step inside and witness the tangible results of dedication and design.</p>
 				</div>
 			</div>
 		</div>
@@ -338,238 +350,9 @@
 				</div>
 			</div>
 		</div>
-	</section><!-- 
-
-	<section class="ftco-section ftco-team" id="team">
-		<div class="container-fluid px-md-5">
-			<div class="row justify-content-center pb-3">
-				<div class="col-md-10 heading-section text-center ftco-animate">
-					<span class="subheading">Artistic Director</span>
-					<h2 class="mb-4">TEAM</h2>
-					<p>Our diverse talents, united by a shared goal.</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-12 ftco-animate loop">
-					<div class="carousel-team owl-carousel">
-						<div class="item">
-							<a href="#" class="team text-center">
-								<div class="img" style="background-image: url(images/sh.jpg);"></div>
-								<h2>Salman Hameed</h2>
-								<span class="position">Designer</span>
-							</a>
-						</div>
-						<div class="item">
-							<a href="#" class="team text-center">
-								<div class="img" style="background-image: url(images/OD.jpg);"></div>
-								<h2>Obaid Ur Rehman</h2>
-								<span class="position">Developer</span>
-							</a>
-						</div>
-						<div class="item">
-							<a href="#" class="team text-center">
-								<div class="img" style="background-image: url(images/stylist-3.jpg);"></div>
-								<h2>Cloe Meyer</h2>
-								<span class="position">Director</span>
-							</a>
-						</div>
-						<div class="item">
-							<a href="#" class="team text-center">
-								<div class="img" style="background-image: url(images/stylist-5.jpg);"></div>
-								<h2>Dave Buff</h2>
-								<span class="position">Barber</span>
-							</a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
 	</section>
- -->
-	<!-- 	<div style="padding: 10px;"></div>
- -->
-	<!-- <section class="ftco-section ftco-pricing">
-		<div class="container">
-			<div class="row justify-content-center pb-3">
-				<div class="col-md-10 heading-section text-center ftco-animate">
-					<span class="subheading">Pricing</span>
-					<h2 class="mb-4">Our Prices</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-3 ftco-animate">
-					<div class="pricing-entry pb-5 text-center">
-						<div>
-							<h3 class="mb-4">Hair Style</h3>
-							<p><span class="price">$50.00</span> <span class="per">/ session</span></p>
-						</div>
-						<ul>
-							<li>Hair Dryer</li>
-							<li>Hair Coloring</li>
-							<li>Hair Cut</li>
-							<li>Hair Dresser</li>
-							<li>Hair Spa</li>
-						</ul>
-						<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
-					</div>
-				</div>
-				<div class="col-md-3 ftco-animate">
-					<div class="pricing-entry pb-5 text-center">
-						<div>
-							<h3 class="mb-4">Manicure Pedicure</h3>
-							<p><span class="price">$34.50</span> <span class="per">/ session</span></p>
-						</div>
-						<ul>
-							<li>Manicure</li>
-							<li>Pedicure</li>
-							<li>Coloring</li>
-							<li>Nails</li>
-							<li>Nail Cut</li>
-						</ul>
-						<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
-					</div>
-				</div>
-				<div class="col-md-3 ftco-animate">
-					<div class="pricing-entry active pb-5 text-center">
-						<div>
-							<h3 class="mb-4">Makeup</h3>
-							<p><span class="price">$54.50</span> <span class="per">/ session</span></p>
-						</div>
-						<ul>
-							<li>Makeup</li>
-							<li>Professional Makeup</li>
-							<li>Blush On</li>
-							<li>Facial Massage</li>
-							<li>Facial Spa</li>
-						</ul>
-						<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
-					</div>
-				</div>
-				<div class="col-md-3 ftco-animate">
-					<div class="pricing-entry pb-5 text-center">
-						<div>
-							<h3 class="mb-4">Body Treatment</h3>
-							<p><span class="price">$89.50</span> <span class="per">/ session</span></p>
-						</div>
-						<ul>
-							<li>Massage</li>
-							<li>Spa</li>
-							<li>Foot Spa</li>
-							<li>Body Spa</li>
-							<li>Relaxing</li>
-						</ul>
-						<p class="button text-center"><a href="#" class="btn btn-primary px-4 py-3">Get Offer</a></p>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
 
-	<!-- <section class="testimony-section bg-light">
-		<div class="container">
-			<div class="row ftco-animate justify-content-center">
-				<div class="col-md-6 col-lg-5 d-flex">
-					<div class="testimony-img" style="background-image: url(images/testimony-img.jpg);"></div>
-				</div>
-				<div class="col-md-6 col-lg-7 py-5 pl-md-5">
-					<div class="py-md-5">
-						<div class="heading-section ftco-animate">
-							<span class="subheading">Testimony</span>
-							<h2 class="mb-0">Happy Customer</h2>
-						</div>
-						<div class="carousel-testimony owl-carousel ftco-animate">
-							<div class="item">
-								<div class="testimony-wrap pb-4">
-									<div class="text">
-										<p class="mb-4">Far far away, behind the word mountains, far from the
-											countries
-											Vokalia and Consonantia, there live the blind texts.</p>
-									</div>
-									<div class="d-flex">
-										<div class="user-img" style="background-image: url(images/stylist-1.jpg)">
-										</div>
-										<div class="pos ml-3">
-											<p class="name">Jeff Nucci</p>
-											<span class="position">Businessman</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-wrap pb-4">
-									<div class="text">
-										<p class="mb-4">Far far away, behind the word mountains, far from the
-											countries
-											Vokalia and Consonantia, there live the blind texts.</p>
-									</div>
-									<div class="d-flex">
-										<div class="user-img" style="background-image: url(images/stylist-2.jpg)">
-										</div>
-										<div class="pos ml-3">
-											<p class="name">Jeff Nucci</p>
-											<span class="position">Businessman</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-wrap pb-4">
-									<div class="text">
-										<p class="mb-4">Far far away, behind the word mountains, far from the
-											countries
-											Vokalia and Consonantia, there live the blind texts.</p>
-									</div>
-									<div class="d-flex">
-										<div class="user-img" style="background-image: url(images/stylist-3.jpg)">
-										</div>
-										<div class="pos ml-3">
-											<p class="name">Jeff Nucci</p>
-											<span class="position">Businessman</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-wrap pb-4">
-									<div class="text">
-										<p class="mb-4">Far far away, behind the word mountains, far from the
-											countries
-											Vokalia and Consonantia, there live the blind texts.</p>
-									</div>
-									<div class="d-flex">
-										<div class="user-img" style="background-image: url(images/stylist-4.jpg)">
-										</div>
-										<div class="pos ml-3">
-											<p class="name">Jeff Nucci</p>
-											<span class="position">Businessman</span>
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="item">
-								<div class="testimony-wrap pb-4">
-									<div class="text">
-										<p class="mb-4">Far far away, behind the word mountains, far from the
-											countries
-											Vokalia and Consonantia, there live the blind texts.</p>
-									</div>
-									<div class="d-flex">
-										<div class="user-img" style="background-image: url(images/stylist-5.jpg)">
-										</div>
-										<div class="pos ml-3">
-											<p class="name">Jeff Nucci</p>
-											<span class="position">Businessman</span>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section> -->
+	<!-- contact us -->
 
 	<section class="ftco-section ftco-booking bg-light" id="contact">
 		<div class="container ftco-relative">
@@ -577,7 +360,7 @@
 				<div class="col-md-10 heading-section text-center ftco-animate">
 					<span class="subheading">Booking</span>
 					<h2 class="mb-4">Contact Us.</h2>
-					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia</p>
+					<p>We look forward to hearing from you.</p>
 				</div>
 			</div>
 			<h3 class="vr">Call Us: +91-9058112210</h3>
@@ -638,7 +421,6 @@
 						<p>We design, build, and consult on exhibition stalls and booths worldwide. Additionally, we
 							offer end-to-end digital marketing and website services to amplify your brand presence</p>
 						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-							<!-- <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li> -->
 							<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
 							<li class="ftco-animate"><a href="#"><span class="icon-instagram"></span></a></li>
 							<li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>
@@ -665,11 +447,15 @@
 
 										1. Introduction<br><br>
 
-										Welcome to the website of SquareEx Studios. We are committed to respecting your privacy. This Privacy Policy explains how we handle any information you provide to us through our contact form. By using our website and submitting information through the contact form, you consent to the practices described in this policy.<br><br>
+										Welcome to the website of SquareEx Studios. We are committed to respecting your
+										privacy. This Privacy Policy explains how we handle any information you provide
+										to us through our contact form. By using our website and submitting information
+										through the contact form, you consent to the practices described in this
+										policy.<br><br>
 
 										Contact Information:<br>
 										SquareEx Studios<br><br>
-										
+
 										Email: info@squareexstudios.com<br>
 										Phone: +91 9058112210<br><br>
 
@@ -686,40 +472,61 @@
 
 										3. How We Use Your Information<br><br>
 
-										We use the information you provide through the contact form for the following purposes:<br><br>
+										We use the information you provide through the contact form for the following
+										purposes:<br><br>
 
-										To respond to your inquiries and provide the information or services you request.<br>
-										To follow up on your message and communicate with you regarding your interest in our services.<br>
+										To respond to your inquiries and provide the information or services you
+										request.<br>
+										To follow up on your message and communicate with you regarding your interest in
+										our services.<br>
 										To understand the needs of our potential clients.<br><br>
 
 										4. How We Handle Your Information<br><br>
 
-										The information you submit through the contact form is typically sent to us via email. We will use this information to communicate with you directly. We may store this information securely for a reasonable period to manage inquiries and potential client relationships.<br><br>
+										The information you submit through the contact form is typically sent to us via
+										email. We will use this information to communicate with you directly. We may
+										store this information securely for a reasonable period to manage inquiries and
+										potential client relationships.<br><br>
 
 										We do not:<br><br>
 
-										Automatically collect any other personal information (like IP addresses, browsing history, cookies) as this is a static website with no user accounts or tracking mechanisms implemented.<br>
-										Share your contact form information with third parties for marketing purposes without your explicit consent.<br><br>
+										Automatically collect any other personal information (like IP addresses,
+										browsing history, cookies) as this is a static website with no user accounts or
+										tracking mechanisms implemented.<br>
+										Share your contact form information with third parties for marketing purposes
+										without your explicit consent.<br><br>
 
 										5. Data Security<br><br>
 
-										We take reasonable precautions to protect the information you submit through the contact form during transmission and storage. However, please understand that email communication is not always secure, and we cannot guarantee the absolute security of information transmitted via email.<br><br>
+										We take reasonable precautions to protect the information you submit through the
+										contact form during transmission and storage. However, please understand that
+										email communication is not always secure, and we cannot guarantee the absolute
+										security of information transmitted via email.<br><br>
 
 										6. Your Rights<br><br>
 
-										You have the right to request access to the information you have submitted through the contact form and to ask us to correct any inaccuracies. If you would like to exercise these rights, please contact us using the information provided above.<br><br>
+										You have the right to request access to the information you have submitted
+										through the contact form and to ask us to correct any inaccuracies. If you would
+										like to exercise these rights, please contact us using the information provided
+										above.<br><br>
 
 										7. Links to Other Websites<br><br>
 
-										Our website may contain links to other websites. We are not responsible for the privacy practices or content of these websites. We encourage you to review the privacy policies of those websites if you visit them.<br><br>
+										Our website may contain links to other websites. We are not responsible for the
+										privacy practices or content of these websites. We encourage you to review the
+										privacy policies of those websites if you visit them.<br><br>
 
 										8. Updates to this Privacy Policy<br><br>
 
-										We may update this Privacy Policy from time to time. Any changes will be posted on this page with a revised effective date.<br><br>
+										We may update this Privacy Policy from time to time. Any changes will be posted
+										on this page with a revised effective date.<br><br>
 
 										9. Governing Law and Jurisdiction<br><br>
 
-										This Privacy Policy shall be governed by and construed in accordance with the laws of India. Any disputes arising under or in connection with this Privacy Policy shall be subject to the exclusive jurisdiction of the courts in Aligarh, Uttar Pradesh.<br><br>
+										This Privacy Policy shall be governed by and construed in accordance with the
+										laws of India. Any disputes arising under or in connection with this Privacy
+										Policy shall be subject to the exclusive jurisdiction of the courts in Aligarh,
+										Uttar Pradesh.<br><br>
 									</p>
 									<button type="button" class="btn btn-secondary btn-sm"
 										id="closePrivacyPolicy">Close</button>
@@ -738,12 +545,11 @@
 						<h2 class="ftco-heading-2">Links</h2>
 						<ul class="list-unstyled">
 							<li><a href="#index" class="py-2 d-block">Home</a></li>
-							<!-- <li><a href="#about" class="py-2 d-block">About</a></li> -->
+							<li><a href="about.html" class="py-2 d-block">About Us</a></li>
+							<li><a href="#gallery" class="py-2 d-block">Gallery</a></li>
 							<li><a href="#services" class="py-2 d-block">Services</a></li>
 							<li><a href="#gallery" class="py-2 d-block">Portfolio</a></li>
 							<li><a href="#contact" class="py-2 d-block">Contact</a></li>
-							<li><a href="about.html" class="py-2 d-block">About</a></li>
-							<!-- <li><a href="#" class="py-2 d-block">Blog</a></li> -->
 
 						</ul>
 					</div>
@@ -753,7 +559,7 @@
 						<h2 class="ftco-heading-2">Have a Questions?</h2>
 						<div class="block-23 mb-3">
 							<ul>
-								<li><span class="icon icon-map-marker"></span><span class="text">A28 Sakthi Majestic,
+								<li><span class="icon icon-map-marker"></span><span class="text">Sakthi Majestic,
 										MCN Nagar, Pillayar Koil St., Thoraipakkam, Chennai 600097</span></li>
 								<li><a href="tel:+919058112210"><span class="icon icon-phone"></span><span
 											class="text">+91 9058112210</span></a></li>
@@ -774,11 +580,7 @@
 				</div>
 			</div>
 		</div>
-
-
 	</footer>
-
-
 
 	<!-- loader -->
 	<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
@@ -805,12 +607,7 @@
 	<script src="js/google-map.js"></script>
 	<script src="js/main.js"></script>
 	<script src="js/type.js"></script>
-
-
-
-
-
-
+	<script src="js/nav.js"></script>
 </body>
 
 </html>
