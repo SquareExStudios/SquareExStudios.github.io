@@ -1,0 +1,4 @@
+/* Custom CSS to show dropdown menu on hover */
+.nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+}

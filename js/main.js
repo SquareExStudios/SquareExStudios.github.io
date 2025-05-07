@@ -420,6 +420,7 @@ window.addEventListener('scroll', setActiveLink);
 // Call setActiveLink on initial load to handle cases where the URL has a hash
 setActiveLink();
 
+
 $(document).ready(function () {
 	const privacyPolicyLink = $('#privacyPolicyLink');
 	const privacyPolicyBox = $('#privacyPolicyBox');
@@ -441,4 +442,72 @@ $(document).ready(function () {
 		privacyPolicyBox.removeClass('show');
 		overlay.removeClass('show');
 	});
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+	const sections = document.querySelectorAll('section[id]');
+	const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+	const dropdownToggles = document.querySelectorAll('.nav-item.dropdown > .nav-link, .nav-item.dropdown > span');
+
+	function clearActive() {
+		navLinks.forEach(link => link.classList.remove('active'));
+		dropdownToggles.forEach(toggle => toggle.classList.remove('active'));
+	}
+
+	function onScroll() {
+		let scrollPos = window.scrollY || window.pageYOffset;
+		clearActive();
+
+		sections.forEach(section => {
+			const top = section.offsetTop - 80;
+			const bottom = top + section.offsetHeight;
+			const id = section.getAttribute('id');
+
+			if (scrollPos >= top && scrollPos < bottom) {
+				navLinks.forEach(link => {
+					if (link.getAttribute('href') === '#' + id || link.getAttribute('href') === 'index.html#' + id) {
+						link.classList.add('active');
+						// Add active to parent dropdown toggle if exists
+						const dropdownToggle = link.closest('.dropdown-menu')?.previousElementSibling;
+						if (dropdownToggle) {
+							dropdownToggle.classList.add('active');
+						}
+					}
+				});
+			}
+		});
+	}
+
+	window.addEventListener('scroll', onScroll);
+	onScroll(); // initialize on page load
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+	const aboutToggle = document.getElementById('navbarDropdown');
+	if (aboutToggle) {
+		aboutToggle.style.cursor = 'pointer';
+		aboutToggle.addEventListener('click', function (e) {
+			if (!e.target.classList.contains('dropdown-item')) {
+				window.location.href = 'about.html';
+			}
+		});
+	}
+	const galleryToggle = document.getElementById('navbarDropdownGallery');
+	if (galleryToggle) {
+		galleryToggle.style.cursor = 'pointer';
+		galleryToggle.addEventListener('click', function (e) {
+			if (!e.target.classList.contains('dropdown-item')) {
+				window.location.href = 'index.html#gallery';
+			}
+		});
+	}
+	const servicesToggle = document.getElementById('navbarDropdownServices');
+	if (servicesToggle) {
+		servicesToggle.style.cursor = 'pointer';
+		servicesToggle.addEventListener('click', function (e) {
+			if (!e.target.classList.contains('dropdown-item')) {
+				window.location.href = 'index.html#services';
+			}
+		});
+	}
 });
