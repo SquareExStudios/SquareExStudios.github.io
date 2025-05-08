@@ -432,6 +432,12 @@ hr {
   color: white;
 }
 
+.fontf {
+  font-family: "Special Elite", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
 small,
 .small {
   font-size: 80%;
