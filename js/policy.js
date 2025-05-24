@@ -5,7 +5,7 @@ function policy(){
     overlay.style.display = "block";
     box.innerHTML = `<h3>Privacy Policy</h3>
 										<p style="color: black;">
-											Effective Date: [Date]<br><br>
+											Effective Date: June 01, 2025<br><br>
 
 											1. Introduction<br><br>
 
