@@ -31,6 +31,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/nav.css">
+	<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -59,12 +62,22 @@
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a href="index.html#index" class="nav-link">Home</a></li>
-					<li class="nav-item dropdown"><a href="about.html" class="nav-link"
+<!-- 					<li class="nav-item dropdown"><a href="about.html" class="nav-link"
 							style="white-space: nowrap">About Us <i class="fa fa-caret-down"></i></a>
 						<ul class="dropdown-content">
 							<li class="dropdown-item"><a href="globe.html" class="nav-link" style="color: black;">Global
 									Presence</a></li>
 						</ul>
+					</li> -->
+					<li class="nav-item dropdown">
+						<a href="about.html" class="nav-link dropdown-toggle" id="aboutDropdown" role="button"
+							data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+							style="white-space: nowrap">
+							About Us <i class="fa fa-caret-down"></i>
+						</a>
+						<div class="dropdown-menu" aria-labelledby="aboutDropdown">
+							<a class="dropdown-item" href="globe.html" style="color: black;">Global Presence</a>
+						</div>
 					</li>
 					<li class="nav-item dropdown"><a href="index.html#gallery" class="nav-link"
 							style="white-space: nowrap">Gallery <i class="fa fa-caret-down"></i></a>
@@ -113,8 +126,10 @@
 						<h4 class="heading12 fontf">Transform Your Exhibition Presence</h4>
 						<p><a href="#" class="btn btn-primary btn-outline-primary px-4 py-2">Download
 								Portfolio <i class="fa fa-download" aria-hidden="true"></i></a>
-							<a href="#services" class="btn btn-primary btn-outline-primary px-4 py-2">Explore Services <i class="fa fa-arrow-right" aria-hidden="true"></i></a></p>
-							
+							<a href="#services" class="btn btn-primary btn-outline-primary px-4 py-2">Explore Services
+								<i class="fa fa-arrow-right" aria-hidden="true"></i></a>
+						</p>
+
 					</div>
 				</div>
 			</div>
@@ -132,7 +147,8 @@
 						style="background-image: url(images/db-1.jpg);">
 						<div class="text">
 							<h3>INTERNATIONAL</h3>
-							<p><a href="gallery.html" class="btn-custom" style="color: white; text-decoration: underline;">View Gallery<span
+							<p><a href="gallery.html" class="btn-custom"
+									style="color: white; text-decoration: underline;">View Gallery<span
 										class="ion-ios-arrow-round-forward"></span></a></p>
 						</div>
 					</div>
@@ -159,7 +175,8 @@
 						style="background-image: url(images/nat.jpg);">
 						<div class="text">
 							<h3>NATIONAL</h3>
-							<p><a href="gallery1.html" class="btn-custom" style="color: white; text-decoration: underline;">View Gallery<span
+							<p><a href="gallery1.html" class="btn-custom"
+									style="color: white; text-decoration: underline;">View Gallery<span
 										class="ion-ios-arrow-round-forward"></span></a></p>
 						</div>
 					</div>
@@ -380,12 +397,14 @@
 						<div class="row">
 							<div class="col-sm-6">
 								<div class="form-group">
-									<input type="text" class="form-control" id="appointment_name" placeholder="Name" required>
+									<input type="text" class="form-control" id="appointment_name" placeholder="Name"
+										required>
 								</div>
 							</div>
 							<div class="col-sm-6">
 								<div class="form-group">
-									<input type="email" class="form-control" id="appointment_email" placeholder="Email" required>
+									<input type="email" class="form-control" id="appointment_email" placeholder="Email"
+										required>
 								</div>
 							</div>
 							<div class="col-sm-6">
@@ -431,14 +450,20 @@
 						<p>We design, build, and consult on exhibition stalls and booths worldwide. Additionally, we
 							offer end-to-end digital marketing and website services to amplify your brand presence</p>
 						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-							<li class="ftco-animate"><a href="https://www.facebook.com/profile.php?id=100068637349288&sk=about"><span class="icon-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.instagram.com/squareexstudios?igsh=MWYzaHp0djd4MXBxdw%3D%3D&utm_source=qr"><span class="icon-instagram"></span></a></li>
+							<li class="ftco-animate"><a
+									href="https://www.facebook.com/profile.php?id=100068637349288&sk=about"><span
+										class="icon-facebook"></span></a></li>
+							<li class="ftco-animate"><a
+									href="https://www.instagram.com/squareexstudios?igsh=MWYzaHp0djd4MXBxdw%3D%3D&utm_source=qr"><span
+										class="icon-instagram"></span></a></li>
 							<li class="ftco-animate"><a href="#"><span class="icon-linkedin"></span></a></li>
 							<li class="ftco-animate"><a href="mailto:info@squareexstudios.com"><span
 										class="icon-envelope"></span></a></li>
 							<li class="ftco-animate"><a href="tel:+91-9058112210"><span class="icon-phone"></span></a>
 							</li>
-							<li class="ftco-animate"><a href="https://wa.me/+919058112210?text=Hello%2C%20I%20have%20a%20question"><span class="icon-whatsapp"></span></a></li>
+							<li class="ftco-animate"><a
+									href="https://wa.me/+919058112210?text=Hello%2C%20I%20have%20a%20question"><span
+										class="icon-whatsapp"></span></a></li>
 							<li class="ftco-animate"><a href="#"><span class="icon-pinterest"></span></a></li>
 						</ul>
 					</div>
