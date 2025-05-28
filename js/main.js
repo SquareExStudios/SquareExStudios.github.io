@@ -354,8 +354,6 @@ function sendEmail(event) {
 
 	const name = document.getElementById('appointment_name').value;
 	const email = document.getElementById('appointment_email').value;
-	const date = document.getElementById('appointment_date').value;
-	const time = document.getElementById('appointment_time').value;
 	const service = document.getElementById('appointment_service').value;
 	const phone = document.getElementById('phone').value;
 	const message = document.getElementById('message').value;
@@ -365,8 +363,6 @@ function sendEmail(event) {
 	const body = `
 	Name: ${name}
 	Email: ${email}
-	Date: ${date}
-	Time: ${time}
 	Service: ${service}
 	Phone: ${phone}
 	Message: ${message}
