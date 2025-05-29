@@ -359,7 +359,7 @@ function sendEmail(event) {
 	const message = document.getElementById('message').value;
 	const recipient = 'SquareExstudios@gmail.com'; // Replace with the actual email address
 
-	const subject = 'Regarding' + service + 'appointment';
+	const subject = 'Regarding ' + service + ' Appointment';
 	const body = `
 	Name: ${name}
 	Email: ${email}
