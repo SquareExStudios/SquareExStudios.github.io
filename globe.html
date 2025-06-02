@@ -34,57 +34,49 @@
 </head>
 
 <body>
+	<!-- navbar -->
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light bg-blur" id="ftco-navbar">
-		<div class="container">
-			<a class="navbar-brand" href="index.html" style="margin-left: 50px;"><img id="navlogo" src="/logo/logof.png"
-					alt="SquareEx">SquareEx
-				Studios</a>
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="oi oi-menu"></span> Menu
-			</button>
-
-
+		<div class="container-fluid">
+				<div style="margin-left: 0px;">
+				<a class="navbar-brand" href="#index"><img id="navlogo" style="width: 60px;"
+						src="/logo/logof.png" alt="SquareEx"></a>
+				</div>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+					aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="oi oi-menu"></span>
+				</button>
+			
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a href="index.html#index" class="nav-link">Home</a></li>
-					<li class="nav-item dropdown"><a href="about.html" class="nav-link"
-							style="white-space: nowrap">About Us <i class="fa fa-caret-down"></i></a>
-						<ul class="dropdown-content">
-							<li class="dropdown-item"><a href="globe.html" class="nav-link" style="color: black;">Global
-									Presence</a></li>
+					<li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            		<li class="nav-item dropdown">
+                    	<a class="nav-link dropdown-toggle" id="galleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Gallery</a>
+						<ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+							<li class="dropdown-item"><a href="index.html#gallery">Go to Gallery..</a></li>
+							 <li><hr class="dropdown-divider"></li>
+							<li class="dropdown-item"><a href="gallery.html">International Gallery</a></li>
+							<li class="dropdown-item"><a href="gallery1.html">National Gallery</a></li>
 						</ul>
 					</li>
-					<li class="nav-item dropdown"><a href="index.html#gallery" class="nav-link"
-							style="white-space: nowrap">Gallery <i class="fa fa-caret-down"></i></a>
-						<ul class="dropdown-content">
-							<li class="dropdown-item"><a href="gallery.html" class="nav-link"
-									style="color: black;">International Gallery</a></li>
-							<li class="dropdown-item"><a href="gallery1.html" class="nav-link"
-									style="color: black;">National Gallery</a></li>
-						</ul>
-					</li>
-					<li class="nav-item dropdown"><a href="index.html#services" class="nav-link"
-							style="white-space: nowrap">Services <i class="fa fa-caret-down"></i></a>
-						<ul class="dropdown-content">
-							<li class="dropdown-item"><a href="#" class="nav-link" style="color: black;">Website
-									Designing</a></li>
-							<li class="dropdown-item"><a href="#" class="nav-link" style="color: black;">3D Graphic
-									Designing</a></li>
-							<li class="dropdown-item"><a href="#" class="nav-link"
-									style="color: black;">Consultation</a></li>
-							<li class="dropdown-item"><a href="#" class="nav-link" style="color: black;">Digital
-									Marketing</a></li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
+						>Services</a>
+						<ul class="dropdown-menu" aria-labelledby="servicesDropdown">
+							<li class="dropdown-item"><a href="index.html#services">Go to Services..</a></li>
+							 <li><hr class="dropdown-divider"></li>
+							<li class="dropdown-item"><a href="#">Website Designing</a></li>
+							<li class="dropdown-item"><a href="#">3D Graphic Designing</a></li>
+							<li class="dropdown-item"><a href="#">Consultation </a></li>
+							<li class="dropdown-item"><a href="#">Digital Marketing</a></li>
 						</ul>
 					</li>
 					<li class="nav-item"><a href="index.html#port" class="nav-link">Portfolio</a></li>
+					<li class="nav-item"><a href="globe.html" class="nav-link">Global Presence</a></li>
 					<li class="nav-item"><a href="index.html#contact" class="nav-link">Contact</a></li>
-
 				</ul>
 			</div>
-
-
-
 		</div>
 	</nav>
 	<!-- END nav -->
