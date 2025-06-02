@@ -50,3 +50,9 @@ nav div ul li ul li a {
     display: block;
 }
 
+.roboto-slab{
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
