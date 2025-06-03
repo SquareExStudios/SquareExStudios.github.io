@@ -373,13 +373,13 @@ function sendEmail(event) {
 	window.location.href = mailtoLink;
 }
 
-document.addEventListener('DOMContentLoaded', function () {
+/* document.addEventListener('DOMContentLoaded', function () {
 	setTimeout(function () {
 		document.getElementById('loadingScreen').style.display = 'none';
 		document.body.style.visibility = 'visible';
 	}, 3000); // Delay in milliseconds (e.g., 2000 = 2 seconds)
 });
-
+ */
 /* 		var loadingScreen = document.querySelector(".loadingScreen");
 		window.addEventListener('load', function () {
 			loadingScreen.style.display = 'none';

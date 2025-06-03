@@ -545,6 +545,15 @@
 	<script src="js/type.js"></script>
 	<script src="js/nav.js"></script>
 	<script src="js/policy.js"></script>
+
+	<script>
+		document.addEventListener('DOMContentLoaded', function () {
+			setTimeout(function () {
+				document.getElementById('loadingScreen').style.display = 'none';
+				document.body.style.visibility = 'visible';
+			}, 3000); // Delay in milliseconds (e.g., 2000 = 2 seconds)
+		});
+	</script>
 </body>
 
 </html>
