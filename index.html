@@ -532,10 +532,14 @@
 		</svg></div>
 
 	<script>
-		document.getElementById('galleryDropdown').addEventListener('click', function (e) {
+		$('#galleryDropdown').on('click', function (e) {
 			e.preventDefault();
-			var dropdown = new bootstrap.Dropdown(this);
-			dropdown.toggle();
+			var $dropdown = $(this).next('.dropdown-menu');
+			if ($dropdown.hasClass('show')) {
+				$(this).dropdown('toggle'); // This will close it
+			} else {
+				$(this).dropdown('toggle'); // This will open it
+			}
 		});
 	</script>
 
