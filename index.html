@@ -65,16 +65,18 @@
 						<a class="nav-link dropdown-toggle" id="galleryDropdown" role="button" aria-haspopup="true"
 							data-bs-toggle="dropdown" aria-expanded="false">
 							Gallery</a>
-						<div class="dropdown-menu" aria-labelledby="galleryDropdown">
+						<!-- 						<div class="dropdown-menu" aria-labelledby="galleryDropdown">
 							<a class="dropdown-item" href="gallery.html">International Gallery</a>
 							<a class="dropdown-item" href="gallery1.html">National Gallery</a>
-						</div>
-						<!-- 	<ul class="dropdown-menu" aria-labelledby="galleryDropdown">
+						</div> -->
+						<ul class="dropdown-menu" aria-labelledby="galleryDropdown">
 							<li class="dropdown-item"><a href="#gallery">Go to Gallery..</a></li>
-							 <li><hr class="dropdown-divider"></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
 							<li class="dropdown-item"><a href="gallery.html">International Gallery</a></li>
 							<li class="dropdown-item"><a href="gallery1.html">National Gallery</a></li>
-						</ul> -->
+						</ul>
 					</li>
 					<li class="nav-item dropdown">
 						<a class="nav-link dropdown-toggle" id="servicesDropdown" role="button"
@@ -528,6 +530,14 @@
 				stroke="#F96D00" />
 
 		</svg></div>
+
+	<script>
+		document.getElementById('galleryDropdown').addEventListener('click', function (e) {
+			e.preventDefault();
+			var dropdown = new bootstrap.Dropdown(this);
+			dropdown.toggle();
+		});
+	</script>
 
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery-migrate-3.0.1.min.js"></script>
