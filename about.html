@@ -32,43 +32,81 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/nav.css">
 
+	<style>
+		.ftco-team .row {
+			max-height: 500px;
+			/* Or any height you prefer */
+			overflow-y: auto;
+			/* Enables vertical scrolling */
+			-webkit-overflow-scrolling: touch;
+			/* Adds smooth scrolling on mobile devices */
+		}
+
+		/* 2. Override the Owl Carousel styles to stack items vertically */
+		.ftco-team .carousel-team {
+			display: flex;
+			flex-direction: column;
+			/* Stack team members vertically */
+			align-items: center;
+			/* Center the items horizontally */
+		}
+
+		/* 3. Ensure the carousel items behave correctly in a vertical layout */
+		.ftco-team .carousel-team .item {
+			width: 100%;
+			/* Make each item take the full width of the container */
+			margin-bottom: 20px;
+			/* Add some space between team members */
+		}
+
+		/* Optional: Clean up Owl Carousel's default padding if needed */
+		.ftco-team .owl-carousel .owl-stage {
+			padding-left: 0 !important;
+		}
+	</style>
+
 </head>
 
 <body>
 	<!-- navbar -->
-		<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light bg-blur" id="ftco-navbar">
+	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light bg-blur" id="ftco-navbar">
 		<div class="container-fluid">
-				<div style="margin-left: 0px;">
-				<a class="navbar-brand" href="#index"><img id="navlogo" style="width: 60px;"
-						src="/logo/logof.png" alt="SquareEx"></a>
-				</div>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
-					aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
-					<span class="oi oi-menu"></span>
-				</button>
-			
+			<div style="margin-left: 0px;">
+				<a class="navbar-brand" href="#index"><img id="navlogo" style="width: 60px;" src="/logo/logof.png"
+						alt="SquareEx"></a>
+			</div>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
+				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span>
+			</button>
+
 			<div class="collapse navbar-collapse" id="ftco-nav">
 				<ul class="navbar-nav ml-auto">
 					<li class="nav-item"><a href="index.html#index" class="nav-link">Home</a></li>
 					<li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
-            		<li class="nav-item dropdown">
-                    	<a class="nav-link dropdown-toggle" id="galleryDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Gallery</a>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" id="galleryDropdown" role="button" data-bs-toggle="dropdown"
+							aria-expanded="false">
+							Gallery</a>
 						<ul class="dropdown-menu" aria-labelledby="galleryDropdown">
 							<li class="dropdown-item"><a href="index.html#gallery">Go to Gallery..</a></li>
-							 <li><hr class="dropdown-divider"></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
 							<li class="dropdown-item"><a href="gallery.html">International Gallery</a></li>
 							<li class="dropdown-item"><a href="gallery1.html">National Gallery</a></li>
 						</ul>
 					</li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"
-						>Services</a>
+						<a class="nav-link dropdown-toggle" id="servicesDropdown" role="button"
+							data-bs-toggle="dropdown" aria-expanded="false">Services</a>
 						<ul class="dropdown-menu" aria-labelledby="servicesDropdown">
 							<li class="dropdown-item"><a href="index.html#services">Go to Services..</a></li>
-							 <li><hr class="dropdown-divider"></li>
+							<li>
+								<hr class="dropdown-divider">
+							</li>
 							<li class="dropdown-item"><a href="#">Website Designing</a></li>
-							<li class="dropdown-item"><a href="#">3D Graphic Designing</a></li>
+							<li class="dropdown-item"><a href="#">3D-Graphic Designing</a></li>
 							<li class="dropdown-item"><a href="#">Consultation </a></li>
 							<li class="dropdown-item"><a href="#">Digital Marketing</a></li>
 						</ul>
@@ -85,8 +123,7 @@
 
 
 
-	<section class="hero-wrap" style="background-image: url('logo/logo-1.png');"
-		data-stellar-background-ratio="0.5">
+	<section class="hero-wrap" style="background-image: url('logo/logo-1.png');" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
@@ -157,21 +194,21 @@
 							</a>
 						</div>
 						<div class="item">
-							<a href="#" class="team text-center">
+							<a class="team text-center">
 								<div class="img" style="background-image: url(images/OD.jpg);"></div>
 								<h2>Obaid Ur Rehman</h2>
 								<span class="position">Developer</span>
 							</a>
 						</div>
 						<div class="item">
-							<a href="#" class="team text-center">
+							<a class="team text-center">
 								<div class="img" style="background-image: url(images/stylist-3.jpg);"></div>
 								<h2>Adnan Hameed</h2>
 								<span class="position">Designer</span>
 							</a>
 						</div>
 						<div class="item">
-							<a href="#" class="team text-center">
+							<a class="team text-center">
 								<div class="img" style="background-image: url(images/stylist-4.jpg);"></div>
 								<h2>Sahil</h2>
 								<span class="position">Sales Executive</span>
@@ -193,15 +230,21 @@
 						<p>We design, build, and consult on exhibition stalls and booths worldwide. Additionally, we
 							offer end-to-end digital marketing and website services to amplify your brand presence</p>
 						<ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
-							<li class="ftco-animate"><a href="https://www.facebook.com/SquareExStudios"><span class="icon-facebook"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.instagram.com/squareexstudios"><span class="icon-instagram"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.linkedin.com/company/squareex-studios"><span class="icon-linkedin"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.facebook.com/SquareExStudios"><span
+										class="icon-facebook"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.instagram.com/squareexstudios"><span
+										class="icon-instagram"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.linkedin.com/company/squareex-studios"><span
+										class="icon-linkedin"></span></a></li>
 							<li class="ftco-animate"><a href="mailto:info@squareexstudios.com"><span
 										class="icon-envelope"></span></a></li>
 							<li class="ftco-animate"><a href="tel:+91-9058112210"><span class="icon-phone"></span></a>
 							</li>
-							<li class="ftco-animate"><a href="https://wa.me/+919058112210?text=Hello%2C%20I%20have%20a%20question"><span class="icon-whatsapp"></span></a></li>
-							<li class="ftco-animate"><a href="https://www.pinterest.com/squareexstudios"><span class="icon-pinterest"></span></a></li>
+							<li class="ftco-animate"><a
+									href="https://wa.me/+919058112210?text=Hello%2C%20I%20have%20a%20question"><span
+										class="icon-whatsapp"></span></a></li>
+							<li class="ftco-animate"><a href="https://www.pinterest.com/squareexstudios"><span
+										class="icon-pinterest"></span></a></li>
 						</ul>
 					</div>
 				</div>
@@ -243,7 +286,8 @@
 										MCN Nagar, Pillayar Koil St., Thoraipakkam, Chennai 600097</span></li>
 								<li><a href="tel:+919058112210"><span class="icon icon-phone"></span><span
 											class="text">+91 9058112210</span></a></li>
-								<li><a href="mailto:info@squareexstudios.com"><span class="icon icon-envelope"></span><span
+								<li><a href="mailto:info@squareexstudios.com"><span
+											class="icon icon-envelope"></span><span
 											class="text">info@squareexstudios.com</span></a></li>
 							</ul>
 						</div>
