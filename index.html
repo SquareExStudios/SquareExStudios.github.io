@@ -33,6 +33,43 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/nav.css">
 
+	<style>
+		.hero-wrap {
+    position: relative;
+    /* Other styles for your hero-wrap, like min-height, padding, etc. */
+    /* If js-fullheight handles the height, ensure it sets a definite height */
+    overflow: hidden; /* Important to clip any video overflow */
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the video take up 100% width of its parent */
+    height: 100%; /* Make the video take up 100% height of its parent */
+    object-fit: cover; /* This is the key property for "stretch fit" */
+    z-index: -1;
+    /* You had overflow: hidden; inline, but it's better placed here if needed.
+       However, object-fit: cover usually handles the "clipping" aspect. */
+}
+
+/* Ensure your overlay is positioned and has a higher z-index than the video */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Example: semi-transparent black */
+    z-index: 0; /* Or any value higher than the video's z-index */
+}
+
+/* Ensure your container holding the content is positioned and has the highest z-index */
+.container {
+    position: relative; /* Essential for z-index to work reliably */
+    z-index: 1; /* Or any value higher than the overlay */
+}
+	</style>
 </head>
 
 <body data-spy="scroll" data-target="#ftco-navbar" data-offset="70">
@@ -99,15 +136,14 @@
 	<!-- main -->
 
 
-	<section class="hero-wrap js-fullheight" style="background-image: url(images/bg-3.jpg);"
-		data-stellar-background-ratio="0.5" id="index">
+	<section class="hero-wrap js-fullheight" data-stellar-background-ratio="0.5" id="index">
 		<div class="overlay"></div>
-	<!-- 		<video playsinline autoplay muted loop poster="images/bg-3.jpg" class="bg-video js-fullwidth">
-				<source src="vid/My Video.mp4" type="video/mp4">
+			<video playsinline autoplay muted loop poster="images/bg-3.jpg" style="position:absolute; z-index: -1;" class="bg-video js-fullheight">
+			<source src="vid/My Video.mp4" type="video/mp4">
 	
 			Your browser does not support the video tag.
-			</video> -->
-		<div class="container">
+			</video> 
+		<div class="container" style="z-index: 1;">
 			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
 				<div class="col-lg-12 ftco-animate d-flex align-items-center">
 					<div class="text text-center">
@@ -142,7 +178,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-md-3 text-center d-flex align-items-stretch">
+				<div class="col-md-3 text-center d-flex align-items-stretch" style="z-index: 2;">
 					<div class="text-about py-5 px-4">
 						<h1 class="logo">
 							<a href="#index"><img src="/logo/logof.png" class="l-logo" alt="SquareEx"><br>SquareEx
