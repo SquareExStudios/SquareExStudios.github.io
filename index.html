@@ -34,45 +34,8 @@
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/nav.css">
 	<link rel="stylesheet" href="css/video.css">
-	<style>
-		.carousel-container {
-			position: relative;
-			overflow: none;
-			white-space: nowrap;
-			width: 100%;
-			height: 100px;
-			margin-top: auto;
-			margin-bottom: auto;
-			display: flex;
-			align-items: center;
-		}
-
-		.scrolling-text {
-			display: inline-block;
-			padding-left: 100%;
-			width: auto;
-			animation: scroll-left 70s linear infinite;
-			font-size: 7em;
-			font-weight: bold;
-			font-family: 'Titillium Web', Arial, sans-serif;
-		}
-
-		@keyframes scroll-left {
-			0% {
-				transform: translateX(-100%);
-			}
-
-			100% {
-				transform: translateX(0%);
-			}
-		}
-
-		.scrolling-text span {
-			margin-right: 10px;
-			/* spacing between repeating segments */
-		}
-	</style>
-
+	<link rel="stylesheet" href="css/marquee.css">
+	
 </head>
 
 <body data-spy="scroll" data-target="#ftco-navbar" data-offset="70">
@@ -288,15 +251,17 @@
 		</h1>
 	</Section>
 
-	<section class="heading-section ftco-animate">
+<!-- marquee -->
+<!-- 	<section class="heading-section ftco-animate" style="position:fixed; z-index: -1;">
 		<div class="carousel-container">
 			<div class="scrolling-text">
 				<span>Events. Management. Organizer. Planners.</span>
 				<span>Events. Management. Organizer. Planners.</span>
 				<span>Events. Management. Organizer. Planners.</span>
+				<span>Events. Management. Organizer. Planners.</span>
 			</div>
 		</div>
-	</section>
+	</section> -->
 
 	<!-- portfolio -->
 
