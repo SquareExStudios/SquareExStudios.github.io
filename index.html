@@ -32,44 +32,9 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/video.css">
 
-	<style>
-		.hero-wrap {
-    position: relative;
-    /* Other styles for your hero-wrap, like min-height, padding, etc. */
-    /* If js-fullheight handles the height, ensure it sets a definite height */
-    overflow: hidden; /* Important to clip any video overflow */
-}
 
-.bg-video {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; /* Make the video take up 100% width of its parent */
-    height: 100%; /* Make the video take up 100% height of its parent */
-    object-fit: cover; /* This is the key property for "stretch fit" */
-    z-index: -1;
-    /* You had overflow: hidden; inline, but it's better placed here if needed.
-       However, object-fit: cover usually handles the "clipping" aspect. */
-}
-
-/* Ensure your overlay is positioned and has a higher z-index than the video */
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Example: semi-transparent black */
-    z-index: 0; /* Or any value higher than the video's z-index */
-}
-
-/* Ensure your container holding the content is positioned and has the highest z-index */
-.container {
-    position: relative; /* Essential for z-index to work reliably */
-    z-index: 1; /* Or any value higher than the overlay */
-}
-	</style>
 </head>
 
 <body data-spy="scroll" data-target="#ftco-navbar" data-offset="70">
