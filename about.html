@@ -31,6 +31,7 @@
 	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/nav.css">
+	<link rel="stylesheet" href="css/video.css">
 
 </head>
 
@@ -39,8 +40,8 @@
 	<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light bg-blur" id="ftco-navbar">
 		<div class="container-fluid">
 			<div style="margin-left: 0px;">
-				<a class="navbar-brand" href="index.html#index"><img id="navlogo" style="width: 60px;" src="/logo/logof.png"
-						alt="SquareEx"></a>
+				<a class="navbar-brand" href="index.html#index"><img id="navlogo" style="width: 60px;"
+						src="/logo/logof.png" alt="SquareEx"></a>
 			</div>
 			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav"
 				aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,8 +53,8 @@
 					<li class="nav-item"><a href="index.html#index" class="nav-link">Home</a></li>
 					<li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
 					<li class="nav-item dropdown">
-						<a class="nav-link dropdown-toggle" id="galleryDropdown" role="button" aria-haspopup="true" data-toggle="dropdown"
-							aria-expanded="false">
+						<a class="nav-link dropdown-toggle" id="galleryDropdown" role="button" aria-haspopup="true"
+							data-toggle="dropdown" aria-expanded="false">
 							Gallery</a>
 						<ul class="dropdown-menu" aria-labelledby="galleryDropdown">
 							<li class="dropdown-item"><a href="index.html#gallery">Go to Gallery..</a></li>
@@ -89,8 +90,25 @@
 	<!-- END nav -->
 
 
+	<section class="hero-wrap js-fullheight" data-stellar-background-ratio="0.5">
+		<!-- <div class="overlay"></div> -->
+		<video playsinline autoplay muted loop poster="logo/logo-1.png" style="position:absolute; z-index: -1;"
+			class="bg-video js-fullheight">
+			<source src="vid/about.mp4" type="video/mp4">
+		</video>
+<!-- 		<div class="container" style="z-index: 1;">
+			<div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+				<div class="col-lg-12 ftco-animate d-flex align-items-center">
+					<div class="text text-center">
+						<h2 class="mb-0 bread">ABOUT US</h2>
+						<h4 class="heading12 fontf">Modeling, Texturing, Rendering</h4>
+					</div>
+				</div>
+			</div>
+		</div> -->
 
-	<section class="hero-wrap" style="background-image: url('logo/logo-1.png');" data-stellar-background-ratio="0.5">
+	</section>
+	<!-- 	<section class="hero-wrap" style="background-image: url('logo/logo-1.png');" data-stellar-background-ratio="0.5">
 		<div class="overlay"></div>
 		<div class="container">
 			<div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
@@ -101,7 +119,7 @@
 								class="ion-ios-arrow-round-forward"></i></span></p>
 				</div>
 			</div>
-		</div>
+		</div> -->
 	</section>
 
 	<section class="ftco-section ftco-team" id="team">
@@ -121,7 +139,8 @@
 				<div class="col-md-6 d-flex">
 					<div class="p-md-5 img img-2 d-flex justify-content-center align-items-center"
 						style="background-image: url(logo/logo-1.png);">
-						<a href="vid/SquareEx Studios.mp4" class="icon popup-vimeo d-flex justify-content-center align-items-center">
+						<a href="vid/SquareEx Studios.mp4"
+							class="icon popup-vimeo d-flex justify-content-center align-items-center">
 							<span class="icon-play"></span>
 						</a>
 					</div>
