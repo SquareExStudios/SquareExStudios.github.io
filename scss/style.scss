@@ -107,7 +107,7 @@ h1, h2, h3, h4, h5,
 				letter-spacing: 1px;
 				text-transform: uppercase;
 				&:hover {
-					color: $primary;
+					color: blue;
 				}
 				opacity: 1!important;
 				@include media-breakpoint-down(md){
