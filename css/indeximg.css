@@ -1,0 +1,46 @@
+	.header {
+			text-align: center;
+			padding: 32px;
+		}
+
+		.row1 {
+			display: -ms-flexbox;
+			/* IE 10 */
+			display: flex;
+			-ms-flex-wrap: wrap;
+			/* IE 10 */
+			flex-wrap: wrap;
+			padding: 0 4px;
+		}
+
+		/* Create two equal columns that sits next to each other */
+		.column1 {
+			-ms-flex: 50%;
+			/* IE 10 */
+			flex: 50%;
+			padding: 0 4px;
+		}
+
+		.column1 img {
+			margin-top: 8px;
+			vertical-align: middle;
+		}
+
+		/* Style the buttons */
+		.btn1 {
+			border: none;
+			outline: none;
+			padding: 10px 16px;
+			background-color: #f1f1f1;
+			cursor: pointer;
+			font-size: 18px;
+		}
+
+		.btn1:hover {
+			background-color: #ddd;
+		}
+
+		.btn1.active {
+			background-color: #666;
+			color: white;
+		}
