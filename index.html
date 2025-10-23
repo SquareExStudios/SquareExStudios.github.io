@@ -57,6 +57,7 @@
 	<link rel="stylesheet" href="css/marquee.css">
 	<link rel="stylesheet" href="css/indeximg.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+	<link rel="preload" as="image" href="images/bg-3.webp" fetchpriority="high">
 
 	<style>
 		.grecaptcha-badge {
@@ -172,7 +173,7 @@
 
 	<section class="hero-wrap js-fullheight" data-stellar-background-ratio="0.5" id="index">
 		<div class="overlay"></div>
-		<video playsinline autoplay muted loop poster="images/bg-3.webp" style="position:absolute; z-index: -1;"
+		<video playsinline autoplay muted loop poster="images/bg-3.webp" loading="eager" style="position:absolute; z-index: -1;"
 			class="bg-video js-fullheight">
 			<source src="vid/My Video.mp4" type="video/mp4">
 		</video>
@@ -357,9 +358,8 @@
 				<img src="images/main/Front (10).jpeg" style="width: 100%;" alt="Portfolio image">
 			</div>
 			<div class="column1">
-				<img src="images/main/Front (1).jpeg" style="width: 100%;" alt="Portfolio image">
-				
-				<img src="images/main/Front (11).jpeg" style="width: 100%;" alt="Portfolio image">
+				<img src="images/main/Front (1).webp" style="width: 100%;" alt="Portfolio image">
+				<img src="images/main/Front (11).webp" style="width: 100%;" alt="Portfolio image">
 				<img src="images/main/Front (12).jpeg" style="width: 100%;" alt="Portfolio image">
 				<img src="images/main/Front (13).jpeg" style="width: 100%;" alt="Portfolio image">
 				<img src="images/main/Front (9).jpeg" style="width: 100%;" alt="Portfolio image">
