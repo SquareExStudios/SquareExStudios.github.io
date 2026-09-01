@@ -1,0 +1,33 @@
+# robots.txt for squareexstudios.com
+# Allows all well-behaved crawlers to index the site
+
+User-agent: *
+Allow: /
+
+# Common bad paths to keep out of the index (adjust as needed)
+Disallow: /wp-admin/
+Disallow: /cgi-bin/
+Disallow: /*?*utm_
+Disallow: /*?*sessionid=
+Disallow: /search/
+Disallow: /cart/
+Disallow: /checkout/
+Disallow: /*.json$
+Disallow: /private/
+Disallow: /tmp/
+
+# Explicitly welcome major search & AI crawlers (remove any you don't want)
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Slurp
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# Sitemap location
+Sitemap: https://squareexstudios.com/sitemap.xml
